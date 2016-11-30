@@ -663,7 +663,7 @@
         <!--MainViewController-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController title="MainViewController" storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController title="MainViewController" storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="MainViewController" customModule="skiptify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -689,6 +689,9 @@
                                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="onPlayeButtonPressed:" target="XfG-lQ-9wD" id="9PM-N4-KV4"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oqz-ii-W5k">
                                         <rect key="frame" x="146" y="9" width="32" height="32"/>

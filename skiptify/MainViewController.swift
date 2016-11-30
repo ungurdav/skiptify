@@ -20,13 +20,21 @@ class MainViewController: NSViewController {
     @IBOutlet weak var nextButton: NSButton!
     
     @IBOutlet weak var addToSongsButton: NSButton!
+    
+    
     // MARK: - Properties
+    let spotifyController = SpotifyController()
     
     // MARK: - View LC
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+        
     }
     
     // MARK: - Action
+    
+    @IBAction func onPlayeButtonPressed(_ sender: Any) {
+        spotifyController.execute(action: .play)
+    }
 }
